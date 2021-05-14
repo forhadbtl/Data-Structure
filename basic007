@@ -1,0 +1,31 @@
+///passing structure variable to function
+
+#include<stdio.h>
+#include<conio.h>
+struct person{
+    char name[40];
+    int age;
+    float salary;
+};
+
+void display(struct person p){
+    printf("\nName    : %s\n",p.name);
+    printf("Age     : %d\n",p.age);
+    printf("Salary  : %f\n",p.salary);
+}
+
+int main(){
+    struct person person1,person2;
+
+    strcpy(person1.name,"Forhad Hossain");
+    person1.age = 22;
+    person1.salary = 50000.00;
+    display(person1);
+
+    strcpy(person2.name,"Robert Jassica");
+    person2.age = 24;
+    person2.salary = 50000.00;
+    display(person2);
+
+    getch();
+}
