@@ -8,12 +8,12 @@ int main()
 {
     struct person person1, person2;
     person1.age = 25;
-    person1.salary = 1500.50;
+    person1.salary = 15000.50;
     
     printf("Person 1: \nAge = %d\nSalary =%.2f\n",person1.age,person1.salary);
 
-    person2.age = 55;
-    person2.salary = 500.50;
+    person2.age = 50;
+    person2.salary = 5000.50;
     printf("\nPerson 2: \nAge = %d\nSalary =%.2f\n",person2.age,person2.salary);
 
     return 0;
