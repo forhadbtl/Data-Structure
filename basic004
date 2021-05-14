@@ -1,0 +1,29 @@
+///structure comparison
+
+#include<stdio.h>
+#include<conio.h>
+
+//Global structure
+struct person{
+    int age;
+    float salary;
+};
+
+int main()
+{
+    struct person person1 = {30, 5000.00}; //30 = age & 5000.00 = salary
+    struct person person2 = {25, 4000.00}; //25 = age & 4000.00 = salary
+    struct person person3;
+
+    //structure variable assignment
+    person3 = person2;
+
+    if(person2.age==person3.age && person2.salary==person3.salary)
+    {
+        printf("Person 2 and Person 3 are Equal\n\n");
+    }
+    else
+        printf("Person 2 and Person 3 are not Equal\n\n");
+
+    getch();
+}
