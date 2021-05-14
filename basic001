@@ -9,6 +9,7 @@ int main()
     struct person person1, person2;
     person1.age = 25;
     person1.salary = 1500.50;
+    
     printf("Person 1: \nAge = %d\nSalary =%.2f\n",person1.age,person1.salary);
 
     person2.age = 55;
