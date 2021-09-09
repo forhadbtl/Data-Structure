@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+    int A[50],i,n,search;
+    printf("Enter your elements no: ");
+    scanf("%d",&n);
+    
+    printf("Enter %d integer number:\n",n);
+    for(i=0;i<n;i++)
+        scanf("%d",&A[i]);
+    printf("Enter your search number: \n");
+    scanf("%d",&search);
+    
+    for(i=0;i<n;i++){
+        if(A[i]==search){
+            printf("%d is founded of index no %d",search,i);
+            return 0;
+        }
+    }
+    printf("Not found!!");
+    getch();
+}
