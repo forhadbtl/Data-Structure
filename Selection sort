@@ -2,7 +2,7 @@
 int main(){
     int A[30],i,j,k,n,temp,minIndex;
     
-    printf("\t\tSelection Short\n\n");
+    printf("\t\tSelection Sort\n\n");
     
     printf("Input your number of elements: ");
     scanf("%d",&n);
